@@ -6,6 +6,10 @@ function App() {
   return <Section>
     <Nav>
 
+    <svg width="69" height="51" viewBox="0 0 69 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M69 48.5245L64.5157 37.4792L58.8404 36.2458L39.4924 32.0493L50.8537 15.2966L53.7507 11.0329L49.3006 0L27.9023 30.3812L26.5421 32.3108L12.0982 11.7821L0 11.7556L20.865 42.492L26.5601 50.8816L26.6267 50.9788L26.6412 51L26.7222 50.8816L32.4101 42.492L33.3271 41.1403L41.8111 42.8967L69 48.5245Z" fill="#FFE715"/>
+    </svg>
+
     <svg 
       width="167" 
       height="27"
@@ -48,16 +52,44 @@ function App() {
 
       </Activity>
     </ActivityList>
+
+    <Content>
+      background
+    </Content>
+
+    <Footer>
+    <svg width="198" height="206" viewBox="0 0 198 206" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M66 169.687L66 0L1.27591e-07 32.9193L1.52588e-05 206L66 169.687Z" fill="#101920"/>
+      <path d="M198 169.687L198 0L132 32.9193L132 206L198 169.687Z" fill="#101920"/>
+      <path d="M132 169.687L132 0L66 32.9193L66 206L132 169.687Z" fill="#FFE715"/>
+    </svg>
+
+    </Footer>
   </Section>
 }
 
 export default App;
+
+const Footer = styled.div`
+
+`;
 
 const Section = styled.div`
 
   margin: 40px 60px 0px 60px;
 `;
 const Nav = styled.div`
+
+  background: papayawhip;
+`;
+
+const Content = styled.div`
+
+  //margin: 40px 50px 0px 50px;
+  margin-top: 40px;
+  background: papayawhip;
+  display: flex;
+  width: 100%;
 `;
 const ActivityList = styled.div`
   display: flex;
@@ -66,9 +98,9 @@ const ActivityList = styled.div`
   margin-top: 60px;
 `;
 const Activity = styled.div`
-  margin-left: 40px;
+  //margin-left: 40px;
   gravity: centre;
-  //background: papayawhip;
+  background: papayawhip;
   display: inline-block;
   display: block;
   width: 90%;
